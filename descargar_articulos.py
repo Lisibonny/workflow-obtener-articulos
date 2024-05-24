@@ -12,7 +12,7 @@ posts = []
 
 for canal in canales:
 
-    url = 'https://www.diariolibre.com/feed/' + canal + '.xml'
+    url = URLS_CANALES_DIARIOS + canal + '.xml'
     feed = feedparser.parse(url)
     if not (feed.entries):
         continue
