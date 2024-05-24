@@ -3,8 +3,11 @@ import feedparser
 import webbrowser
 import html
 import pprint
+import os
 
 # Parser del Diario libre
+
+diarios= list(os.environ.get(URLS_CANALES_DIARIOS))
 
 canales = ['mundo', 'actualidad','revista','planeta','economia','deportes']
 
